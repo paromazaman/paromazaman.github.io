@@ -71,11 +71,11 @@ footer {
 
 /* Background Animation */
 @keyframes backgroundChange {
-    0% { background-color: #f1c40f; }
-    25% { background-color: #e74c3c; }
-    50% { background-color: #3498db; }
-    75% { background-color: #2ecc71; }
-    100% { background-color: #9b59b6; }
+    0% { background-color: #dfe99c; }
+    25% { background-color: #ddc6c3; }
+    50% { background-color: #8bb4df; }
+    75% { background-color: ##ffafc8; }
+    100% { background-color: #f4cba9; }
 }
 
 /* Spiral Animation for the 'i' */
