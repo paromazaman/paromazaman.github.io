@@ -27,12 +27,16 @@
         .header-img {
             width: 25%;
             max-width: 400px;
+            margin-right: 10px;
+            flex-shrink: 0;
             height: auto;
         }
         .header-links {
             width: 75%;
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
+            gap: 10px;
+            flex-grow: 1;
             align-items: center;
         }
 
@@ -43,8 +47,6 @@
             padding: 10px 20px;
             border-radius: 50px;
             background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, background-color 0.3s ease;
         }
    
         .header-links a:hover {
