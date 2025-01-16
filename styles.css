@@ -2,9 +2,9 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(45deg, #f8e2e7, #e7f8f3, #e2e7f8, #f8e7e2, #e8f8e7);
-    background-size: 300% 300%;
-    animation: bgAnimation 20s infinite;
+    background: radial-gradient(circle, #ffe4e1, #e6e6fa, #f0e68c, #add8e6, #d8bfd8, #98fb98, #ffdab9, #ffb6c1, #ffd700, #f5deb3);
+            background-size: 150% 150%;
+            animation: gradientAnimation 15s infinite;
 }
 
 @keyframes bgAnimation {
