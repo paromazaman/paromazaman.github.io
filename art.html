@@ -9,16 +9,10 @@
     <style>
         /* Background animation for the page */
         body {
-            background: radial-gradient(circle, #f8f9fa, #ffffff);
-            animation: gradient-animation 15s infinite alternate;
+            background: #c6b8af;  /* Initial background color */
+            animation: backgroundCycle 40s infinite; /* Adjust duration as needed*/
         }
-        @keyframes gradient-animation {
-            0% { background: radial-gradient(circle, #ffd7e0, #c3c4f3, #def3fd); }
-            25% { background: radial-gradient(circle, #ffedb3, #b9f6cb, #d3f8f0); }
-            50% { background: radial-gradient(circle, #fddbcf, #c4f2f1, #e3f4de); }
-            75% { background: radial-gradient(circle, #d5f6e8, #c6e2f6, #f5f2ce); }
-            100% { background: radial-gradient(circle, #d1e8fd, #ffd7e0, #d3f8f0); }
-        }
+        
 
         /* Sticky header styles */
         .sticky-header {
