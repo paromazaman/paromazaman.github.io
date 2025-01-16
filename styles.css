@@ -3,8 +3,8 @@ body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background: #F7D1D1;  /* Initial background color */
-    animation: backgroundCycle 30s infinite; /* Adjust duration as needed */
+    background: #c6b8af;  /* Initial background color */
+    animation: backgroundCycle 40s infinite; /* Adjust duration as needed */
 
    }
 
