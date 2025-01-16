@@ -98,15 +98,16 @@ header {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-weight: bold;
-    text-decoration: none;
+    font-weight: normal;
+    text-decoration: wavy underline red;
     font-size: 1.2rem;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .gallery-caption:hover {
     opacity: 1;
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: lime underline;
 }
 
 /* Background animation for solid pastel colors */
