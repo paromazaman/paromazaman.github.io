@@ -30,6 +30,8 @@ header {
     width: 100%;
     height: 100%;
     object-fit: contain;  /* Ensures the image scales without cutting off */
+    /*this line could be wrong*/
+    cursor: url('images/cursorhover.png'), auto;
 
 }
 
@@ -56,6 +58,7 @@ header {
 
 .gallery-image:hover {
     transform: scale(1.3);
+    cursor: url('images/cursorhover.png'), auto;
 }
 
 .gallery-image:active {
@@ -80,6 +83,7 @@ header {
     font-weight: bold;
     text-decoration: none;
     text-transform: capitalize;
+    cursor: url('images/cursorhover.png'), auto;
 }
 
 /* Background animation for solid pastel colors */
