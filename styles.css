@@ -8,6 +8,8 @@ body {
 
    }
 
+
+
 /* Header */
 header {
     text-align: center;
@@ -84,6 +86,20 @@ header {
     text-decoration: none;
     text-transform: capitalize;
     cursor: url('images/cursorhover.png'), auto;
+}
+
+.carousel-item img {
+    width: 100%;  /* Adjusts the image to fill the card */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.carousel-inner {
+    display: flex;  /* Flexbox layout for carousel items */
+    justify-content: space-between;  /* Space out the cards */
+}
+
+.card {
+    margin-right: 15px;  /* Add spacing between cards */
 }
 
 /* Background animation for solid pastel colors */
