@@ -84,6 +84,7 @@ header {
     opacity: 1;
     color: lime;
     font-weight: bold;
+    text-decoration: none;
 }
 
 /* Background animation for solid pastel colors */
