@@ -3,9 +3,10 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #FFB3B3, #FF8C8C, #FF6666);
-    animation: backgroundCycle 30s infinite;
-}
+    background: #F7D1D1;  /* Initial background color */
+    animation: backgroundCycle 30s infinite; /* Adjust duration as needed */
+
+   }
 
 /* Header */
 header {
@@ -108,21 +109,39 @@ header {
     text-decoration: underline;
 }
 
-/* Background animation for radial gradient */
+/* Background animation for solid pastel colors */
 @keyframes backgroundCycle {
     0% {
-        background: radial-gradient(circle, #FFB3B3, #FF8C8C, #FF6666);
+        background-color: #F7D1D1; /* Soft pink */
     }
-    25% {
-        background: radial-gradient(circle, #B3D9FF, #66B3FF, #3399FF);
+    10% {
+        background-color: #F7E1A3; /* Soft yellow */
+    }
+    20% {
+        background-color: #C9F2D1; /* Soft mint green */
+    }
+    30% {
+        background-color: #D1C8F7; /* Soft lavender */
+    }
+    40% {
+        background-color: #F7D1F1; /* Soft rose pink */
     }
     50% {
-        background: radial-gradient(circle, #D6FFB3, #99FF66, #66FF33);
+        background-color: #E1F7D1; /* Soft pale green */
     }
-    75% {
-        background: radial-gradient(circle, #FFB3E6, #FF66B3, #FF3399);
+    60% {
+        background-color: #F1F1D1; /* Soft lemon */
+    }
+    70% {
+        background-color: #D1F7F7; /* Soft light blue */
+    }
+    80% {
+        background-color: #F7D1D1; /* Soft peach */
+    }
+    90% {
+        background-color: #F2D1F7; /* Soft lilac */
     }
     100% {
-        background: radial-gradient(circle, #FFB3B3, #FF8C8C, #FF6666);
+        background-color: #F7D1D1; /* Soft pink */
     }
 }
