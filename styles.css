@@ -15,10 +15,11 @@ header {
 
 .header-image-container {
     position: relative;
-    width: 25%;  /* Scale down to 25% */
-    height: 75px;  /* Adjust height to maintain proportion */
-    overflow: hidden;
+    width: 100%;
+    max-width: 600px;  /* Prevents the header from becoming too large on desktop */
+    height: 200px;  /* Adjust the height to suit the image scale */
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .header-image {
@@ -27,7 +28,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;  /* Ensures the image scales without cutting off */
     opacity: 0;
     animation: fadeIn 8s infinite;
 }
@@ -72,6 +73,7 @@ header {
 
 .gallery-item {
     position: relative;
+    text-align: center;
 }
 
 .gallery-image {
