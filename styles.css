@@ -79,6 +79,7 @@ header {
     color: lime;
     font-weight: bold;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 /* Background animation for solid pastel colors */
