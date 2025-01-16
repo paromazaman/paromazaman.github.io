@@ -21,36 +21,39 @@
             z-index: 10;
             display: flex;
             align-items: center;
-            padding: 10px;
-            border-bottom: 0px solid #ddd;
+            justify-content: space-between; /* Ensures even spacing between header elements */
+            padding: 10px 20px;
         }
+
         .header-img {
-            max-width: 200px; /* Keeps the larger size for the header */
-            margin-right: 10px; /* Reduced margin to bring links closer */
+            max-width: 400px; /* Keeps the header size */
             flex-shrink: 0;
         }
 
         .header-links {
             display: flex;
-            justify-content: flex-start;
-            gap: 10px; /* Reduced the gap between links */
+            justify-content: space-around; /* Distributes links evenly within the available space */
             flex-grow: 1;
+            margin-left: 20px; /* Adds some spacing between the header image and links */
+            gap: 15px; /* Space between individual links */
         }
 
         .header-links a {
             text-decoration: wavy underline red;
+            font-weight: normal;
             color: black;
-            font-size: 1.5rem;
+            font-size: 1rem;
             padding: 10px 20px;
             border-radius: 50px;
             background-color: white;
         }
-   
+
         .header-links a:hover {
+            text-decoration: none;
+            color: green;
             text-transform: capitalize;
-            color: limegreen;
-            text-decoration:none;
         }
+
 
         /* Art section styles */
         .art-section {
