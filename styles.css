@@ -55,18 +55,32 @@ header {
 .gallery-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /*ensures aspect ratio stays the same*/
+    object-fit: cover;/*ensures aspect ratio stays the same*/
+    cursor: pointer;
     /*transition: transform 0.3s ease-in-out, rotate 0.5s ease-in-out;*/
 }
+
 
 .gallery-image:hover {
     transform: scale(1.3);
     cursor: url('images/cursorhover.png'), auto;
-}
-
+} 
+/*don't need this???
 .gallery-image:active {
     transform: scale(1.3);
     rotate: 360deg;
+}
+*/
+
+/* Class to enlarge image to fit screen size */
+.gallery-image.enlarged {
+    position: fixed; /* Makes the image fixed on the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Centers the image */
+    max-width: 90vw; /* Makes the image fill the screen but not exceed 90% of the viewport width */
+    max-height: 90vh; /* Limits the image height to 90% of the viewport height */
+    z-index: 1000; /* Ensures the enlarged image appears above other content */
 }
 
 .gallery-caption {
