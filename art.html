@@ -116,51 +116,102 @@
     </div>
 
     <!-- Art Sections -->
-    <div class="container art-section">
-        <!-- Painting Section -->
-        <div class="subheader">Painting</div>
-        <div class="art-header">Painting Gallery</div>
-        <div class="art-grid">
-            <!-- 10 Cards for Painting -->
-            <div class="art-card">
-                <img src="painting1.jpg" alt="Painting 1">
-                <div class="caption">Painting 1</div>
+    <!-- Painting Section -->
+<div class="subheader">Painting</div>
+<div id="paintingCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="painting1.jpg" class="card-img-top" alt="Painting 1">
+                    <div class="card-body">
+                        <p class="card-text">Painting 1</p>
+                    </div>
+                </div>
+                <!-- Repeat similar cards -->
             </div>
-            <!-- Repeat cards -->
         </div>
+        <!-- Add more carousel items as needed -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#paintingCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#paintingCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-        <!-- Drawing Section -->
-        <div class="subheader">Drawing</div>
-        <div class="art-header">Drawing Gallery</div>
-        <div class="art-grid">
-            <!-- 10 Cards for Drawing -->
-            <div class="art-card">
-                <img src="drawing1.jpg" alt="Drawing 1">
-                <div class="caption">Drawing 1</div>
+<!-- Drawing Section -->
+<div class="subheader">Drawing</div>
+<div id="drawingCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-flex">
+                <div class="card" style="width: 18rem;">
+                    <img src="drawing1.jpg" class="card-img-top" alt="Drawing 1">
+                    <div class="card-body">
+                        <p class="card-text">Drawing 1</p>
+                    </div>
+                </div>
+                <!-- Repeat similar cards -->
             </div>
-            <!-- Repeat cards -->
         </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#drawingCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#drawingCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-        <!-- Digital Section -->
-        <div class="subheader">Digital</div>
-        <div class="art-header">Digital Gallery</div>
-        <div class="art-grid">
-            <!-- 10 Cards for Digital -->
-            <div class="art-card">
-                <img src="images/digital/digital1.png" alt="Digital 1">
-                <div class="caption">Digital 1</div>
-            </div>
-            <!-- Repeat cards -->
-            
-            <div class="art-card">
-                <img src="images/digital/digital2.png" alt="Digital 2">
-                <div class="caption">Digital 2/div>
-            </div>
+<!-- Digital Section -->
+<div class="subheader">Digital</div>
+<div id="digitalCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-flex">
                 
-            <div class="art-card">
-                <img src="images/digital/digital3.png" alt="Digital 3">
-                <div class="caption">Digital 3</div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/digital/digital1.png" class="card-img-top" alt="Digital 1">
+                    <div class="card-body">
+                        <p class="card-text">Digital 1</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/digital/digital2.png" class="card-img-top" alt="Digital 2">
+                    <div class="card-body">
+                        <p class="card-text">Digital 2</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/digital/digital3.png" class="card-img-top" alt="Digital 3">
+                    <div class="card-body">
+                        <p class="card-text">Digital 3</p>
+                    </div>
+                </div>
+                
+                <!-- Repeat similar cards -->
             </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#digitalCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#digitalCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+      
                 
         </div>
     </div>
