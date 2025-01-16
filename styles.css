@@ -64,10 +64,9 @@ header {
 }
 
 .gallery-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static; /* Removes absolute positioning so it follows the image */
+    margin-top: 10px; /* Adds space between the image and the caption */
+    text-align: center; /* Centers the caption text */
     color: black;
     font-weight: normal;
     text-decoration: wavy underline red;
