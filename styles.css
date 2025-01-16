@@ -97,7 +97,7 @@ header {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: black;
     font-weight: normal;
     text-decoration: wavy underline red;
     font-size: 1.2rem;
@@ -106,43 +106,43 @@ header {
 
 .gallery-caption:hover {
     opacity: 1;
+    color: lime;
     font-weight: bold;
-    text-decoration: lime underline;
 }
 
 /* Background animation for solid pastel colors */
 @keyframes backgroundCycle {
     0% {
-        background-color: #F7D1D1; /* Soft pink */
+        background-color: wheat;
     }
     10% {
-        background-color: #F7E1A3; /* Soft yellow */
+        background-color: lightblue;
     }
     20% {
-        background-color: #C9F2D1; /* Soft mint green */
+        background-color: thistle;
     }
     30% {
-        background-color: #D1C8F7; /* Soft lavender */
+        background-color: rosybrown;
     }
     40% {
-        background-color: #F7D1F1; /* Soft rose pink */
+        background-color: salmon;
     }
     50% {
-        background-color: #E1F7D1; /* Soft pale green */
+        background-color: khaki;
     }
     60% {
-        background-color: #F1F1D1; /* Soft lemon */
+        background-color: darkkhaki;
     }
     70% {
-        background-color: #D1F7F7; /* Soft light blue */
+        background-color: darkseagreen;
     }
     80% {
-        background-color: #F7D1D1; /* Soft peach */
+        background-color: lightgreen;
     }
     90% {
-        background-color: #F2D1F7; /* Soft lilac */
+        background-color: lightblue;
     }
     100% {
-        background-color: #F7D1D1; /* Soft pink */
+        background-color: #bisque;
     }
 }
