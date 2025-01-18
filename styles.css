@@ -117,8 +117,7 @@ body.image-open {
 
 .gallery-caption:hover {
     opacity: 1;
-    color: lime;
-    font-weight: bold;
+    color: green;
     text-decoration: none;
     text-transform: capitalize;
     cursor: url('images/cursorhover.png'), auto;
