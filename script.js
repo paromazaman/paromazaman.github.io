@@ -1,6 +1,5 @@
 // Handle gallery image enlargement
 
-// Get all gallery images
 const galleryImages = document.querySelectorAll('.gallery-image');
 
 galleryImages.forEach(image => {
@@ -12,34 +11,36 @@ galleryImages.forEach(image => {
             // Prevent scrolling while the image is open
             document.body.classList.add('image-open');
 
-            // Scale image to fit within the viewport while maintaining aspect ratio
+            // Dynamically calculate the maximum size the image can be
             const imageWidth = this.naturalWidth;
             const imageHeight = this.naturalHeight;
 
             const screenWidth = window.innerWidth;
             const screenHeight = window.innerHeight;
 
+            // Calculate the scale factor based on the aspect ratio
             const aspectRatio = imageWidth / imageHeight;
 
-            if (imageWidth > screenWidth || imageHeight > screenHeight) {
-                let scale = 1;
+            let maxWidth = screenWidth * 0.9; // 90% of screen width
+            let maxHeight = screenHeight * 0.9; // 90% of screen height
 
-                // Scale down the image if it exceeds the screen's width or height
-                if (screenWidth / imageWidth < screenHeight / imageHeight) {
-                    scale = screenWidth / imageWidth;
-                } else {
-                    scale = screenHeight / imageHeight;
-                }
-
-                // Apply the scale dynamically
-                this.style.transform = `translate(-50%, -50%) scale(${scale})`;
+            // Adjust max dimensions based on aspect ratio
+            if (aspectRatio > 1) { // Landscape orientation
+                maxHeight = maxWidth / aspectRatio;
+            } else { // Portrait orientation
+                maxWidth = maxHeight * aspectRatio;
             }
 
-            // Close image on clicking it again
+            // Apply the calculated max dimensions to the image
+            this.style.maxWidth = `${maxWidth}px`;
+            this.style.maxHeight = `${maxHeight}px`;
+
+            // Close the enlarged image on clicking the image again
             this.addEventListener('click', () => {
                 this.classList.remove('enlarged');
                 document.body.classList.remove('image-open');
-                this.style.transform = 'translate(-50%, -50%)'; // Reset transform when closed
+                this.style.maxWidth = ''; // Reset max width
+                this.style.maxHeight = ''; // Reset max height
             }, { once: true }); // Ensure this event listener runs only once
         }
     });
