@@ -84,14 +84,22 @@ header {
 */
 
 /* Class to enlarge image to fit screen size */
+
+/* Enlarged image styles */
 .gallery-image.enlarged {
-    position: fixed; /* Makes the image fixed on the screen */
+    position: fixed; /* Ensures the image stays in place */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1); /* Centers the image */
-    max-width: 90vw; /* Makes the image fill the screen but not exceed 90% of the viewport width */
-    max-height: 90vh; /* Limits the image height to 90% of the viewport height */
-    z-index: 1000; /* Ensures the enlarged image appears above other content */
+    transform: translate(-50%, -50%); /* Centers the image */
+    max-width: calc(100vw - 40px); /* Ensures padding of 20px on each side */
+    max-height: calc(100vh - 40px); /* Ensures padding of 20px on top and bottom */
+    z-index: 1000; /* Brings the image to the front */
+    padding: 10px; /* Optional: Adds space around the image */
+}
+
+/* Blurred background when an image is enlarged */
+body.image-open {
+    overflow: hidden; /* Prevents scrolling while image is enlarged */
 }
 
 .gallery-caption {
