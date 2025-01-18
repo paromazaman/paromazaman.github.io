@@ -115,6 +115,11 @@ body.image-open {
     opacity: 1;
 }
 
+.gallery-caption a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .gallery-caption:hover {
     opacity: 1;
     color: green;
