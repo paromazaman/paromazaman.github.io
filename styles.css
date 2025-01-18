@@ -50,6 +50,11 @@ header {
 }
 */
 
+a {
+    text-decoration: none; /* Removes underline globally */
+    color: inherit; /* Ensures the color matches the parent element */
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
