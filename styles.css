@@ -95,6 +95,8 @@ header {
     max-height: calc(100vh - 40px); /* Ensures padding of 20px on top and bottom */
     z-index: 1000; /* Brings the image to the front */
     padding: 10px; /* Optional: Adds space around the image */
+    object-fit; contain;
+    background-color; lightyellow;
 }
 
 /* Blurred background when an image is enlarged */
