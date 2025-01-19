@@ -17,6 +17,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between; /* Ensures even spacing between header elements */
+            flex-wrap: wrap;
             padding: 10px 20px;
             backdrop-filter: blur(10px); 
         }
@@ -33,10 +34,12 @@
 
         .header-links {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around; /* Distributes links evenly within the available space */
             flex-grow: 1;
             margin-left: 20px; /* Adds some spacing between the header image and links */
             gap: 15px; /* Space between individual links */
+            width: 100%;
         }
 
         .header-links a {
@@ -48,6 +51,7 @@
             padding: 10px 20px;
             border-radius: 50px;
             background-color: white;
+            white-space: nowrap; 
         }
 
         .header-links a:hover {
@@ -57,6 +61,24 @@
             cursor: url('images/cursorhover.png'), auto;
         }
 
+        /* Adjust for smaller screens */
+@media (max-width: 600px) {
+    .sticky-header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .header-links {
+        justify-content: center; /* Ensure links stay centered */
+        gap: 5px; /* Reduce spacing for smaller screens */
+    }
+
+    .header-links a {
+        font-size: 0.9rem; /* Slightly smaller text for links */
+    }
+}
+
+        
         .form-container {
             display: flex;
             justify-content: center; /* Centers horizontally */
