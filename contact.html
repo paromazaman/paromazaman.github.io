@@ -25,45 +25,6 @@
             margin: 0; /* Ensures no extra margin around the embed */ 
         }
 
-      
-        /* Sticky header styles */
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: space-between; /* Ensures even spacing between header elements */
-            padding: 10px 20px;
-            backdrop-filter: blur(10px); 
-        }
-
-        .header-links {
-            display: flex;
-            justify-content: space-around; /* Distributes links evenly within the available space */
-            flex-grow: 1;
-            margin-left: 20px; /* Adds some spacing between the header image and links */
-            gap: 15px; /* Space between individual links */
-        }
-
-        .header-links a {
-            text-decoration: none;
-            text-decoration: wavy underline red;
-            font-weight: normal;
-            color: black;
-            font-size: 1rem;
-            padding: 10px 20px;
-            border-radius: 50px;
-            background-color: white;
-        }
-
-        .header-links a:hover {
-            text-decoration: none;
-            color: green;
-            text-transform: capitalize;
-            cursor: url('images/cursorhover.png'), auto;
-        }
-
         .form-container {
             display: flex;
             justify-content: center; /* Centers horizontally */
@@ -107,12 +68,11 @@
         </div>
     </div>
 
-    <div class="contact-box">
+    <div class="contact-box" style="width:99%; width:-webkit-calc(100% - 3px); width:calc(100% - 3px); max-width: 500px;">
         Contact me at 
         <a href="mailto:romi.makes@gmail.com" class="contact-link">romi.makes@gmail.com</a> 
         for all inquiries...or if you just wanna say howdy! 🤠 Fill out the form(s) below to commission a custom piece. <3
     </div>
-
 
     <!--google form-->
     <div class="form-container">

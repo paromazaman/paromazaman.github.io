@@ -52,6 +52,48 @@ header {
     cursor: url('images/cursorhover.png'), auto;
 }
 
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px); 
+}
+
+.header-img:hover {
+    cursor: url('images/cursorhover.png'), auto;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-left: 20px;
+    gap: 15px;
+}
+
+.header-links a {
+    text-decoration: none;
+    text-decoration: wavy underline red;
+    font-weight: normal;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.header-links a:hover {
+    text-decoration: none;
+    color: green;
+    text-transform: capitalize;
+    cursor: url('images/cursorhover.png'), auto;
+}
+
+
 
 
 /* Gallery Section */
@@ -177,6 +219,29 @@ body.image-open {
     text-decoration: none; /* No underline on hover */
     color: lime; /* Lime green on hover */
     cursor: url('images/cursorhover.png'), auto; /* Custom cursor */
+}
+
+
+@media (max-width: 600px) {
+    .sticky-header {
+        padding: 5px 5px;
+    }
+    
+    .header-img {
+        max-width: 50px;
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+    .header-links {
+        margin-left: 10px;
+        gap: 5px;
+    }
+
+    .header-links a {
+        font-size: 0.6rem;
+        padding: 5px 10px;
+    }
 }
 
 
