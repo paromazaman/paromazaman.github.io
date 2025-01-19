@@ -137,7 +137,7 @@ body.image-open {
 .contact-box {
     margin: 20px auto; /* Centers the box */
     padding: 10px; /* Space inside the box */
-    max-width: 600px; /* Limit the box width */
+    max-width: 570px; /* Limit the box width */
     text-align: center; /* Center the text inside */
     font-size: 1.2rem; /* Medium font size */
     background-color: white; /* White bubble background */
