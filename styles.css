@@ -133,19 +133,31 @@ body.image-open {
     cursor: url('images/cursorhover.png'), auto;
 }
 
-.carousel-item img {
-    width: 100%;  /* Adjusts the image to fill the card */
-    height: auto; /* Maintains aspect ratio */
+/* Contact Box Styles */
+.contact-box {
+    margin: 50px auto; /* Centers the box */
+    padding: 20px; /* Space inside the box */
+    max-width: 600px; /* Limit the box width */
+    text-align: center; /* Center the text inside */
+    font-size: 1.2rem; /* Medium font size */
+    background-color: white; /* White bubble background */
+    border-radius: 50px; /* Rounded corners */
+    color: black;
 }
 
-.carousel-inner {
-    display: flex;  /* Flexbox layout for carousel items */
-    justify-content: space-between;  /* Space out the cards */
+/* Contact Link Styles */
+.contact-link {
+    text-decoration: wavy underline red; /* Same as gallery link */
+    color: black; /* Default color */
+    font-weight: normal; /* Default weight */
 }
 
-.card {
-    margin-right: 15px;  /* Add spacing between cards */
+.contact-link:hover {
+    text-decoration: none; /* No underline on hover */
+    color: lime; /* Lime green on hover */
+    cursor: url('images/cursorhover.png'), auto; /* Custom cursor */
 }
+
 
 /* Background animation for solid pastel colors */
 @keyframes backgroundCycle {
