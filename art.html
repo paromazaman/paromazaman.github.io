@@ -28,13 +28,7 @@
             backdrop-filter: blur(10px); 
         }
 
-        .header-img {
-            max-width: 100px; /* Keeps the header size */
-            flex-shrink: 0;
-            cursor: url('images/cursorhover.png'), auto;
-        }
-
-        .header-img: hover {
+        .header-img:hover {
             cursor: url('images/cursorhover.png'), auto;
         }
 
@@ -122,6 +116,7 @@
         </a>
         <div class="header-links">
             <a href="about.html">about</a>
+            <a class="here" href="art.html">art</a>
             <a href="jewelry.html">jewelry</a>
             <a href="clothing.html">clothing</a>
             <a href="contact.html">contact</a>
@@ -129,8 +124,17 @@
     </div>
 
 
-    
-    <!-- Art Sections -->
+<!-- lazy load images -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.getElementsByClassName('gallery-image');
+        for(let img of images) {
+            img.loading = 'lazy';
+        }
+    });
+</script>
+
+<!-- Art Sections -->
 <!-- Digital Section -->
 <div class="subheader">Digital</div>
 <!-- digital gallery -->
