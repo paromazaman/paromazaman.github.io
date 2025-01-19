@@ -9,22 +9,28 @@
     <link rel="icon" type="images/stripeicon.ico" href="/images/stripeicon.ico">
     <style>
         /*contact page instagram embed styles*/
+    .instagram-profile-container {
+        margin: 10px auto; /* Reduces outer space */
+        padding: 0; /* Removes inner padding */
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+    }
 
-                .instagram-profile-container iframe {
-                    display: block;
-                    margin: 0 auto;
-                    padding: 0;
-                    width: 100%; /* Ensure full width responsiveness */
-                    max-width: 100%; /* Optional width adjustment */
-                    height: 100%; /* Adjust height */
-                }
-            
-                .instagram-profile-container {
-                    justify-content: center;
-                    margin: 10px auto;
-                    padding: 0;
-                    overflow: hidden; /* Ensures no extra space outside the iframe is displayed */
-                }
+    .instagram-profile-container blockquote {
+        margin: 0; /* Removes extra space around the embed */
+        padding: 0; /* Removes inner padding */
+    }
+
+    .instagram-profile-container iframe {
+        display: block;
+        max-width: 100%; /* Makes it responsive */
+        height: auto; /* Allows the iframe to adjust based on content */
+        border: none; /* Removes border */
+    }
+
+    .instagram-profile-container {
+        overflow: visible; /* Ensures the full embed is shown */
+    }
 
         /* old css
                 .instagram-profile-container {
