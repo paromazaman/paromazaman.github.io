@@ -8,63 +8,7 @@
     <link rel="stylesheet" href="styles.css">
       <link rel="icon" type="images/stripeicon.ico" href="/images/stripeicon.ico">
     <style>
-      
-  /* Sticky header styles */
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: space-between; /* Ensures even spacing between header elements */
-            padding: 10px 20px;
-            backdrop-filter: blur(10px); 
-        }
 
-        .header-links {
-            display: flex;
-            justify-content: space-around; /* Distributes links evenly within the available space */
-            flex-grow: 1;
-            margin-left: 20px; /* Adds some spacing between the header image and links */
-            gap: 15px; /* Space between individual links */
-        }
-
-        .header-links a {
-            text-decoration: none;
-            text-decoration: wavy underline red;
-            font-weight: normal;
-            color: black;
-            font-size: 1rem;
-            padding: 10px 20px;
-            border-radius: 50px;
-            background-color: white;
-        }
-
-        .header-links a:hover {
-            text-decoration: none;
-            color: green;
-            text-transform: capitalize;
-            cursor: url('images/cursorhover.png'), auto;
-        }
-
-        /* Adjust for smaller screens */
-@media (max-width: 600px) {
-    .sticky-header {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center-align items */
-    }
-
-    .header-links {
-        justify-content: center; /* Ensure links stay centered */
-        gap: 5px; /* Reduce spacing for smaller screens */
-    }
-
-    .header-links a {
-        font-size: 0.9rem; /* Slightly smaller text for links */
-    }
-}
-
-        
         .form-container {
             display: flex;
             justify-content: center; /* Centers horizontally */
